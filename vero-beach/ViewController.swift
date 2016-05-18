@@ -14,9 +14,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
-        moreBtn.layer.cornerRadius = 5.0
 
     }
 
