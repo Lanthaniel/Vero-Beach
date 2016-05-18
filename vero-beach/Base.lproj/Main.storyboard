@@ -3,7 +3,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,11 +25,82 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starfish" translatesAutoresizingMaskIntoConstraints="NO" id="FiV-or-RnA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="0t2-I6-hzl" userLabel="Location">
+                                <rect key="frame" x="363" y="20" width="217" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERO BEACH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLg-v1-cbU">
+                                        <rect key="frame" x="0.0" y="0.0" width="217" height="40"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLORIDA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPq-2n-sIu">
+                                        <rect key="frame" x="106" y="40" width="111" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVG-VB-NdC">
+                                <rect key="frame" x="237" y="500" width="126" height="40"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.74901960784313726" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="2Id-sj-dae"/>
+                                    <constraint firstAttribute="height" constant="40" id="jke-t4-w0c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Learn More">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Hyf-vI-PDL">
+                                <rect key="frame" x="494" y="110" width="86" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHERE THE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh2-WS-1bl">
+                                        <rect key="frame" x="18" y="0.0" width="68" height="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TROPICS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk2-ph-iAi">
+                                        <rect key="frame" x="0.0" y="15" width="86" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEGIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ls-ab-YmA">
+                                        <rect key="frame" x="50" y="39" width="36" height="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hyf-vI-PDL" firstAttribute="top" secondItem="0t2-I6-hzl" secondAttribute="bottom" constant="20" id="0jB-wy-0d3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PVG-VB-NdC" secondAttribute="bottom" constant="60" id="F9I-by-hRa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FiV-or-RnA" secondAttribute="bottom" id="FGJ-tZ-4Z8"/>
+                            <constraint firstItem="PVG-VB-NdC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HEw-c7-OS6"/>
+                            <constraint firstAttribute="trailing" secondItem="FiV-or-RnA" secondAttribute="trailing" id="LR3-29-EdN"/>
+                            <constraint firstItem="FiV-or-RnA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="THE-St-QeC"/>
+                            <constraint firstItem="0t2-I6-hzl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jLa-jI-Xj8"/>
+                            <constraint firstItem="Hyf-vI-PDL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="obo-bI-9Wa"/>
+                            <constraint firstItem="FiV-or-RnA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tY8-Ix-yFD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0t2-I6-hzl" secondAttribute="trailing" id="yis-ak-fIh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moreBtn" destination="PVG-VB-NdC" id="Htv-d7-FSr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="starfish" width="1024" height="768"/>
+    </resources>
 </document>
