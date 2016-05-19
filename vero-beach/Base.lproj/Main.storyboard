@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -14,6 +15,13 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
@@ -107,6 +115,9 @@
                                                 <exclude reference="KyH-oX-avj"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="jJj-M4-cSv" kind="show" id="l58-ww-nuH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -152,19 +163,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT VERO BEACH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-Fb-ZsX">
-                                <rect key="frame" x="192" y="63" width="215" height="24"/>
+                                <rect key="frame" x="205" y="64" width="190" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="tWS-w4-gzh"/>
+                                    <constraint firstAttribute="width" constant="190" id="tWS-w4-gzh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-rM-q3E">
-                                <rect key="frame" x="20" y="20" width="45" height="30"/>
+                                <rect key="frame" x="20" y="20" width="45" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="hBm-Oz-yB0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -172,15 +183,71 @@
                                     <action selector="backPressed:" destination="ePF-iD-mMt" eventType="touchUpInside" id="u0q-tm-ScE"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m7p-e3-U9T">
+                                <rect key="frame" x="20" y="168" width="560" height="241"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qAa-iI-9kP">
+                                        <rect key="frame" x="0.0" y="0.0" width="557" height="91"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAN-jI-1SO">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMb-LV-77d">
+                                                <rect key="frame" x="0.0" y="21" width="557" height="70"/>
+                                                <string key="text">An elegant city located along Florida's East Coast, Vero Beach is a haven for golf, water sports and fishing. Peaceful beaches, museums, nature tours and a range of hotels make Vero Beach a terrific vacation destination and an important part of the Treasure Coast.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-cn-uTP">
+                                        <rect key="frame" x="0.0" y="101" width="88" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-EC-snv">
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15,220" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIr-2k-Qaz">
+                                                <rect key="frame" x="0.0" y="21" width="88" height="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Cxn-fl-8Me">
+                                        <rect key="frame" x="0.0" y="150" width="560" height="91"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63g-yv-g28">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-HX-MbY">
+                                                <rect key="frame" x="0.0" y="21" width="560" height="70"/>
+                                                <string key="text">The modern history of Vero Beach, Florida begins with its establishment as a citrus shipping point.  The original name of the community was taken from the Latin word "veritas", meaning truth.  In 1891 Henry T. Gifford established the first post office in the area and used the name Vero.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9uA-Hd-0fT" secondAttribute="trailing" id="1gP-cF-mFt"/>
+                            <constraint firstItem="joa-YW-vCC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m7p-e3-U9T" secondAttribute="bottom" id="4jz-cn-3k3"/>
                             <constraint firstItem="CWc-rM-q3E" firstAttribute="leading" secondItem="cKS-68-h9a" secondAttribute="leadingMargin" id="JCZ-Xb-N4z"/>
+                            <constraint firstItem="m7p-e3-U9T" firstAttribute="leading" secondItem="cKS-68-h9a" secondAttribute="leadingMargin" id="Rk7-sA-wYK"/>
                             <constraint firstItem="CWc-rM-q3E" firstAttribute="top" secondItem="jKI-z2-2t3" secondAttribute="bottom" id="Tpl-Cj-JKZ"/>
+                            <constraint firstItem="m7p-e3-U9T" firstAttribute="top" secondItem="9uA-Hd-0fT" secondAttribute="bottom" constant="18" id="YsU-Ji-4MH"/>
                             <constraint firstItem="9uA-Hd-0fT" firstAttribute="leading" secondItem="cKS-68-h9a" secondAttribute="leading" id="ald-GW-62h"/>
                             <constraint firstItem="Adk-Fb-ZsX" firstAttribute="centerY" secondItem="9uA-Hd-0fT" secondAttribute="centerY" id="cfm-Da-g5x"/>
                             <constraint firstItem="Adk-Fb-ZsX" firstAttribute="centerX" secondItem="9uA-Hd-0fT" secondAttribute="centerX" id="rEX-Am-6Y3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m7p-e3-U9T" secondAttribute="trailing" id="vBW-9t-lpa"/>
                             <constraint firstItem="9uA-Hd-0fT" firstAttribute="top" secondItem="cKS-68-h9a" secondAttribute="top" id="vXM-eS-AXi"/>
                         </constraints>
                     </view>
@@ -192,9 +259,129 @@
             </objects>
             <point key="canvasLocation" x="968" y="429"/>
         </scene>
+        <!--PhotoVC-->
+        <scene sceneID="BCs-Dm-hkT">
+            <objects>
+                <viewController id="jJj-M4-cSv" customClass="PhotoVC" customModule="vero_beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wEg-Ee-aqO"/>
+                        <viewControllerLayoutGuide type="bottom" id="RPq-DE-1ZF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HsB-i3-vDV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starfish" translatesAutoresizingMaskIntoConstraints="NO" id="uN1-KK-rGi">
+                                <rect key="frame" x="10" y="20" width="580" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZOH-PE-4tK"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HdU-yv-107">
+                                <rect key="frame" x="10" y="175" width="580" height="415"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iOI-xI-2Jz">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="415"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vero2" translatesAutoresizingMaskIntoConstraints="NO" id="c44-cG-0gB">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="135"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="1xk-BS-bD8"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Zbs-rf-pku"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="1xk-BS-bD8"/>
+                                                        <exclude reference="Zbs-rf-pku"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overview" translatesAutoresizingMaskIntoConstraints="NO" id="P3t-Xa-c0y">
+                                                <rect key="frame" x="0.0" y="140" width="288" height="135"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downtown" translatesAutoresizingMaskIntoConstraints="NO" id="4TN-jw-obY">
+                                                <rect key="frame" x="0.0" y="280" width="288" height="135"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BmX-eg-cJt">
+                                        <rect key="frame" x="293" y="0.0" width="287" height="415"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing" translatesAutoresizingMaskIntoConstraints="NO" id="U85-SK-zRI">
+                                                <rect key="frame" x="0.0" y="0.0" width="287" height="135"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="PH7-Q0-s3p"/>
+                                                    <constraint firstAttribute="height" constant="120" id="ao1-ee-irH"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="PH7-Q0-s3p"/>
+                                                        <exclude reference="ao1-ee-irH"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theatre" translatesAutoresizingMaskIntoConstraints="NO" id="JPW-sA-js1">
+                                                <rect key="frame" x="0.0" y="140" width="287" height="135"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weddings" translatesAutoresizingMaskIntoConstraints="NO" id="nkJ-NT-aqO">
+                                                <rect key="frame" x="0.0" y="280" width="287" height="135"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nkJ-NT-aqO" firstAttribute="height" secondItem="U85-SK-zRI" secondAttribute="height" id="PKh-ah-bwn"/>
+                                            <constraint firstItem="JPW-sA-js1" firstAttribute="height" secondItem="U85-SK-zRI" secondAttribute="height" id="SSz-XP-eVe"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BmX-eg-cJt" firstAttribute="top" secondItem="HdU-yv-107" secondAttribute="top" id="8La-LH-dfB"/>
+                                    <constraint firstAttribute="bottom" secondItem="BmX-eg-cJt" secondAttribute="bottom" id="N0J-HS-XJ8"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkL-yl-1sY">
+                                <rect key="frame" x="20" y="20" width="45" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="z4V-ej-t0T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="ePF-iD-mMt" eventType="touchUpInside" id="pqk-cw-DXE"/>
+                                    <action selector="backPressed:" destination="jJj-M4-cSv" eventType="touchUpInside" id="weS-NN-krd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZkL-yl-1sY" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leadingMargin" id="4N5-xe-rFg"/>
+                            <constraint firstItem="HdU-yv-107" firstAttribute="centerX" secondItem="HsB-i3-vDV" secondAttribute="centerX" id="6qD-B1-vqC"/>
+                            <constraint firstAttribute="bottom" secondItem="HdU-yv-107" secondAttribute="bottom" constant="10" id="Ah0-Xb-c6Z"/>
+                            <constraint firstItem="HdU-yv-107" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="Bjc-KG-Lui"/>
+                            <constraint firstItem="HdU-yv-107" firstAttribute="top" secondItem="uN1-KK-rGi" secondAttribute="bottom" constant="5" id="Ete-Eq-SUz"/>
+                            <constraint firstItem="uN1-KK-rGi" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="OyA-Au-LPU"/>
+                            <constraint firstItem="uN1-KK-rGi" firstAttribute="top" secondItem="HsB-i3-vDV" secondAttribute="top" constant="20" id="hnu-pj-1Jr"/>
+                            <constraint firstAttribute="trailing" secondItem="uN1-KK-rGi" secondAttribute="trailing" constant="10" id="i02-tw-pzm"/>
+                            <constraint firstItem="HdU-yv-107" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="HsB-i3-vDV" secondAttribute="trailing" constant="-10" id="j7i-8A-P1z"/>
+                            <constraint firstItem="ZkL-yl-1sY" firstAttribute="top" secondItem="wEg-Ee-aqO" secondAttribute="bottom" id="jtM-aP-HK0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JxL-Uh-Q8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656" y="1093"/>
+        </scene>
     </scenes>
     <resources>
         <image name="boating" width="1024" height="768"/>
+        <image name="downtown" width="752" height="500"/>
+        <image name="overview" width="2550" height="1706"/>
+        <image name="starfish" width="1024" height="768"/>
+        <image name="surfing" width="1280" height="720"/>
+        <image name="theatre" width="2250" height="1425"/>
         <image name="vero" width="3000" height="2000"/>
+        <image name="vero2" width="1700" height="960"/>
+        <image name="weddings" width="1700" height="960"/>
     </resources>
 </document>
