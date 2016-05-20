@@ -25,6 +25,7 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -210,12 +211,12 @@
                                                 <string key="text">An elegant city located along Florida's East Coast, Vero Beach is a haven for golf, water sports and fishing. Peaceful beaches, museums, nature tours and a range of hotels make Vero Beach a terrific vacation destination and an important part of the Treasure Coast.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="heightClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="21" width="557" height="70"/>
                                                 </variation>
                                             </label>
                                         </subviews>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=compact" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="557" height="91"/>
                                         </variation>
                                     </stackView>
@@ -233,7 +234,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=compact" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="101" width="88" height="39"/>
                                         </variation>
                                     </stackView>
@@ -244,7 +245,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="heightClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
                                                 </variation>
                                             </label>
@@ -253,12 +254,12 @@
                                                 <string key="text">The modern history of Vero Beach, Florida begins with its establishment as a citrus shipping point.  The original name of the community was taken from the Latin word "veritas", meaning truth.  In 1891 Henry T. Gifford established the first post office in the area and used the name Vero.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="heightClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="21" width="560" height="70"/>
                                                 </variation>
                                             </label>
                                         </subviews>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=compact" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="150" width="560" height="91"/>
                                         </variation>
                                     </stackView>
@@ -269,7 +270,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="47" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="heightClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="47" height="21"/>
                                                 </variation>
                                             </label>
@@ -278,12 +279,12 @@
                                                 <string key="text">During the day, the locals can often be found browsing the local museums, surfing, boating, or fishing. Night life includes shows at the local theatres, and bar hopping downtown.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="heightClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="21" width="559" height="43"/>
                                                 </variation>
                                             </label>
                                         </subviews>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=compact" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="251" width="559" height="64"/>
                                         </variation>
                                     </stackView>
@@ -296,8 +297,7 @@
                                         <exclude reference="mmv-ca-eGO"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="85" width="560" height="315"/>
+                                <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <include reference="mmv-ca-eGO"/>
                                     </mask>
@@ -341,75 +341,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starfish" translatesAutoresizingMaskIntoConstraints="NO" id="uN1-KK-rGi">
-                                <rect key="frame" x="10" y="20" width="580" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="ZOH-PE-4tK"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boatingblur" translatesAutoresizingMaskIntoConstraints="NO" id="Chu-q5-mvn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HdU-yv-107">
-                                <rect key="frame" x="10" y="175" width="580" height="415"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iOI-xI-2Jz">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="415"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vero2" translatesAutoresizingMaskIntoConstraints="NO" id="c44-cG-0gB">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="135"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="120" id="1xk-BS-bD8"/>
-                                                    <constraint firstAttribute="width" constant="200" id="Zbs-rf-pku"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="1xk-BS-bD8"/>
-                                                        <exclude reference="Zbs-rf-pku"/>
-                                                    </mask>
-                                                </variation>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overview" translatesAutoresizingMaskIntoConstraints="NO" id="P3t-Xa-c0y">
-                                                <rect key="frame" x="0.0" y="140" width="288" height="135"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downtown" translatesAutoresizingMaskIntoConstraints="NO" id="4TN-jw-obY">
-                                                <rect key="frame" x="0.0" y="280" width="288" height="135"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BmX-eg-cJt">
-                                        <rect key="frame" x="293" y="0.0" width="287" height="415"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing" translatesAutoresizingMaskIntoConstraints="NO" id="U85-SK-zRI">
-                                                <rect key="frame" x="0.0" y="0.0" width="287" height="135"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="PH7-Q0-s3p"/>
-                                                    <constraint firstAttribute="height" constant="120" id="ao1-ee-irH"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="PH7-Q0-s3p"/>
-                                                        <exclude reference="ao1-ee-irH"/>
-                                                    </mask>
-                                                </variation>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theatre" translatesAutoresizingMaskIntoConstraints="NO" id="JPW-sA-js1">
-                                                <rect key="frame" x="0.0" y="140" width="287" height="135"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weddings" translatesAutoresizingMaskIntoConstraints="NO" id="nkJ-NT-aqO">
-                                                <rect key="frame" x="0.0" y="280" width="287" height="135"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="nkJ-NT-aqO" firstAttribute="height" secondItem="U85-SK-zRI" secondAttribute="height" id="PKh-ah-bwn"/>
-                                            <constraint firstItem="JPW-sA-js1" firstAttribute="height" secondItem="U85-SK-zRI" secondAttribute="height" id="SSz-XP-eVe"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-YT-FYf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.59999999999999998" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="BmX-eg-cJt" firstAttribute="top" secondItem="HdU-yv-107" secondAttribute="top" id="8La-LH-dfB"/>
-                                    <constraint firstAttribute="bottom" secondItem="BmX-eg-cJt" secondAttribute="bottom" id="N0J-HS-XJ8"/>
+                                    <constraint firstAttribute="height" constant="60" id="qpK-gu-z6L"/>
                                 </constraints>
-                            </stackView>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmo-od-CM2">
+                                <rect key="frame" x="264" y="20" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qRw-0Q-DAr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkL-yl-1sY">
-                                <rect key="frame" x="20" y="20" width="45" height="32"/>
+                                <rect key="frame" x="20" y="19" width="45" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="z4V-ej-t0T"/>
                                 </constraints>
@@ -422,19 +373,51 @@
                                     <action selector="backPressed:" destination="jJj-M4-cSv" eventType="touchUpInside" id="weS-NN-krd"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weddings" translatesAutoresizingMaskIntoConstraints="NO" id="Sfe-ND-AUm">
+                                <rect key="frame" x="10" y="423" width="580" height="167"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing" translatesAutoresizingMaskIntoConstraints="NO" id="aIU-LE-IyP">
+                                <rect key="frame" x="10" y="70" width="580" height="167"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gP0-WT-RCO">
+                                <rect key="frame" x="10" y="247" width="580" height="166"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downtown" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-Ou-znj">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="166"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theatre" translatesAutoresizingMaskIntoConstraints="NO" id="cG7-ql-bW2">
+                                        <rect key="frame" x="295" y="0.0" width="285" height="166"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZkL-yl-1sY" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leadingMargin" id="4N5-xe-rFg"/>
-                            <constraint firstItem="HdU-yv-107" firstAttribute="centerX" secondItem="HsB-i3-vDV" secondAttribute="centerX" id="6qD-B1-vqC"/>
-                            <constraint firstAttribute="bottom" secondItem="HdU-yv-107" secondAttribute="bottom" constant="10" id="Ah0-Xb-c6Z"/>
-                            <constraint firstItem="HdU-yv-107" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="Bjc-KG-Lui"/>
-                            <constraint firstItem="HdU-yv-107" firstAttribute="top" secondItem="uN1-KK-rGi" secondAttribute="bottom" constant="5" id="Ete-Eq-SUz"/>
-                            <constraint firstItem="uN1-KK-rGi" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="OyA-Au-LPU"/>
-                            <constraint firstItem="uN1-KK-rGi" firstAttribute="top" secondItem="HsB-i3-vDV" secondAttribute="top" constant="20" id="hnu-pj-1Jr"/>
-                            <constraint firstAttribute="trailing" secondItem="uN1-KK-rGi" secondAttribute="trailing" constant="10" id="i02-tw-pzm"/>
-                            <constraint firstItem="HdU-yv-107" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="HsB-i3-vDV" secondAttribute="trailing" constant="-10" id="j7i-8A-P1z"/>
-                            <constraint firstItem="ZkL-yl-1sY" firstAttribute="top" secondItem="wEg-Ee-aqO" secondAttribute="bottom" id="jtM-aP-HK0"/>
+                            <constraint firstItem="ZkL-yl-1sY" firstAttribute="centerY" secondItem="tmo-od-CM2" secondAttribute="centerY" id="CFL-Ed-hjH"/>
+                            <constraint firstItem="gP0-WT-RCO" firstAttribute="top" secondItem="aIU-LE-IyP" secondAttribute="bottom" constant="10" id="CfY-ZV-DsY"/>
+                            <constraint firstAttribute="trailing" secondItem="gP0-WT-RCO" secondAttribute="trailing" constant="10" id="EAa-oK-TgQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Sfe-ND-AUm" secondAttribute="trailing" constant="10" id="EMN-kW-yfL"/>
+                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="FDD-bN-fOG"/>
+                            <constraint firstItem="gP0-WT-RCO" firstAttribute="height" secondItem="aIU-LE-IyP" secondAttribute="height" id="FXB-Vd-IPY"/>
+                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="top" secondItem="gP0-WT-RCO" secondAttribute="bottom" constant="10" id="FdP-T6-faL"/>
+                            <constraint firstAttribute="trailing" secondItem="Chu-q5-mvn" secondAttribute="trailing" id="Hqf-ws-5uL"/>
+                            <constraint firstItem="RPq-DE-1ZF" firstAttribute="top" secondItem="Sfe-ND-AUm" secondAttribute="bottom" constant="10" id="Ikr-sW-dNI"/>
+                            <constraint firstItem="gP0-WT-RCO" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="K0H-p0-h68"/>
+                            <constraint firstItem="RPq-DE-1ZF" firstAttribute="top" secondItem="Chu-q5-mvn" secondAttribute="bottom" id="N1A-Gg-hB6"/>
+                            <constraint firstItem="tmo-od-CM2" firstAttribute="centerY" secondItem="7ey-YT-FYf" secondAttribute="centerY" constant="5" id="Zof-OT-Fvt">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="height" secondItem="aIU-LE-IyP" secondAttribute="height" id="aVu-No-XWv"/>
+                            <constraint firstItem="Chu-q5-mvn" firstAttribute="top" secondItem="HsB-i3-vDV" secondAttribute="top" id="cPo-Jp-FpX"/>
+                            <constraint firstItem="tmo-od-CM2" firstAttribute="centerX" secondItem="7ey-YT-FYf" secondAttribute="centerX" id="g8n-G7-Ow5"/>
+                            <constraint firstItem="aIU-LE-IyP" firstAttribute="top" secondItem="7ey-YT-FYf" secondAttribute="bottom" constant="10" id="gFG-9F-VL8"/>
+                            <constraint firstItem="7ey-YT-FYf" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" id="lUR-3S-oB0"/>
+                            <constraint firstItem="Chu-q5-mvn" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" id="qrg-kU-LSm"/>
+                            <constraint firstItem="7ey-YT-FYf" firstAttribute="top" secondItem="HsB-i3-vDV" secondAttribute="top" id="rpd-Hr-wpJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aIU-LE-IyP" secondAttribute="trailing" constant="10" id="sZu-dK-753"/>
+                            <constraint firstItem="aIU-LE-IyP" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="y2L-NH-USb"/>
+                            <constraint firstAttribute="trailing" secondItem="7ey-YT-FYf" secondAttribute="trailing" id="yWR-zh-z0j"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -446,12 +429,9 @@
     <resources>
         <image name="boatingblur" width="954" height="715"/>
         <image name="downtown" width="752" height="500"/>
-        <image name="overview" width="2550" height="1706"/>
-        <image name="starfish" width="1024" height="768"/>
         <image name="surfing" width="1280" height="720"/>
         <image name="theatre" width="2250" height="1425"/>
         <image name="vero" width="3000" height="2000"/>
-        <image name="vero2" width="1700" height="960"/>
         <image name="weddings" width="1700" height="960"/>
     </resources>
 </document>
