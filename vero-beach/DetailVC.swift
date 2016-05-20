@@ -22,9 +22,9 @@ class DetailVC: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        aboutLbl.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
-        aboutLbl.layer.masksToBounds = true;
-        aboutLbl.layer.cornerRadius = 5.0
+//        aboutLbl.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+//        aboutLbl.layer.masksToBounds = true;
+//        aboutLbl.layer.cornerRadius = 5.0
     }
 
     override func didReceiveMemoryWarning() {
