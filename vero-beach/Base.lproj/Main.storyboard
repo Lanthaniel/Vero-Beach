@@ -3,9 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
@@ -346,7 +344,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boatingblur" translatesAutoresizingMaskIntoConstraints="NO" id="Chu-q5-mvn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-YT-FYf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-YT-FYf" userLabel="MenuBg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.59999999999999998" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -387,102 +385,80 @@
                                     <action selector="backPressed:" destination="jJj-M4-cSv" eventType="touchUpInside" id="weS-NN-krd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weddings" translatesAutoresizingMaskIntoConstraints="NO" id="aIU-LE-IyP">
-                                <rect key="frame" x="10" y="70" width="580" height="108"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing" translatesAutoresizingMaskIntoConstraints="NO" id="Sfe-ND-AUm">
-                                <rect key="frame" x="10" y="188" width="580" height="107"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gP0-WT-RCO">
-                                <rect key="frame" x="10" y="305" width="580" height="285"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iqr-Ps-ljz">
+                                <rect key="frame" x="10" y="70" width="580" height="520"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downtown" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-Ou-znj">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="285"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ghf-5p-w7Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="167"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="surfing" translatesAutoresizingMaskIntoConstraints="NO" id="x5L-fT-lWe" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="167"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="weddings" translatesAutoresizingMaskIntoConstraints="NO" id="6Ec-KT-FkB" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                                <rect key="frame" x="295" y="0.0" width="285" height="167"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-X9-pn6">
+                                        <rect key="frame" x="0.0" y="177" width="580" height="343"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pool" translatesAutoresizingMaskIntoConstraints="NO" id="1c2-LW-RzP" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="580" height="166"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egp-4y-8gL">
+                                                <rect key="frame" x="0.0" y="176" width="580" height="167"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="downtown" translatesAutoresizingMaskIntoConstraints="NO" id="3vk-xa-wop" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="167"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="museum" translatesAutoresizingMaskIntoConstraints="NO" id="Jsn-mp-1mR" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                                        <rect key="frame" x="295" y="0.0" width="285" height="167"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="EcC-Ou-znj" secondAttribute="height" multiplier="1:1" id="5in-4K-tSe"/>
+                                            <constraint firstItem="3vk-xa-wop" firstAttribute="width" secondItem="1c2-LW-RzP" secondAttribute="width" id="X4b-AW-mZ6"/>
                                         </constraints>
-                                        <variation key="heightClass=compact">
+                                        <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="5in-4K-tSe"/>
+                                                <exclude reference="X4b-AW-mZ6"/>
                                             </mask>
                                         </variation>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theatre" translatesAutoresizingMaskIntoConstraints="NO" id="cG7-ql-bW2">
-                                        <rect key="frame" x="295" y="0.0" width="285" height="285"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="cG7-ql-bW2" secondAttribute="height" multiplier="1:1" id="gQS-Uz-gI4"/>
-                                        </constraints>
-                                        <variation key="heightClass=compact">
+                                        <variation key="heightClass=compact" axis="horizontal" distribution="fill">
                                             <mask key="constraints">
-                                                <exclude reference="gQS-Uz-gI4"/>
+                                                <include reference="X4b-AW-mZ6"/>
                                             </mask>
                                         </variation>
-                                    </imageView>
+                                    </stackView>
                                 </subviews>
-                                <variation key="heightClass=compact" axis="vertical"/>
+                                <constraints>
+                                    <constraint firstItem="Ghf-5p-w7Q" firstAttribute="leading" secondItem="iqr-Ps-ljz" secondAttribute="leading" id="Ld8-Rm-6Op"/>
+                                    <constraint firstItem="1c2-LW-RzP" firstAttribute="height" secondItem="x5L-fT-lWe" secondAttribute="height" id="qLn-g8-Q7S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ghf-5p-w7Q" secondAttribute="trailing" id="ug0-QR-2Cm"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RPq-DE-1ZF" firstAttribute="top" secondItem="gP0-WT-RCO" secondAttribute="bottom" constant="10" id="2Ib-Om-ame"/>
                             <constraint firstItem="ZkL-yl-1sY" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leadingMargin" id="4N5-xe-rFg"/>
-                            <constraint firstItem="gP0-WT-RCO" firstAttribute="top" secondItem="7ey-YT-FYf" secondAttribute="bottom" constant="10" id="5Q0-BN-Eax"/>
-                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="leading" secondItem="gP0-WT-RCO" secondAttribute="trailing" constant="10" id="9De-uU-hTx"/>
+                            <constraint firstItem="iqr-Ps-ljz" firstAttribute="top" secondItem="7ey-YT-FYf" secondAttribute="bottom" constant="10" id="7FZ-wj-7T0"/>
                             <constraint firstItem="ZkL-yl-1sY" firstAttribute="centerY" secondItem="tmo-od-CM2" secondAttribute="centerY" id="CFL-Ed-hjH"/>
-                            <constraint firstItem="RPq-DE-1ZF" firstAttribute="top" secondItem="gP0-WT-RCO" secondAttribute="bottom" constant="10" id="Dbi-wB-y0B"/>
-                            <constraint firstAttribute="trailing" secondItem="gP0-WT-RCO" secondAttribute="trailing" constant="400" id="EAa-oK-TgQ"/>
-                            <constraint firstAttribute="trailing" secondItem="Sfe-ND-AUm" secondAttribute="trailing" constant="10" id="EMN-kW-yfL"/>
-                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="FDD-bN-fOG"/>
-                            <constraint firstItem="gP0-WT-RCO" firstAttribute="height" relation="greaterThanOrEqual" secondItem="aIU-LE-IyP" secondAttribute="height" multiplier="0.5" id="FXB-Vd-IPY"/>
-                            <constraint firstAttribute="trailing" secondItem="gP0-WT-RCO" secondAttribute="trailing" constant="10" id="Gqs-50-o6g"/>
                             <constraint firstAttribute="trailing" secondItem="Chu-q5-mvn" secondAttribute="trailing" id="Hqf-ws-5uL"/>
-                            <constraint firstItem="RPq-DE-1ZF" firstAttribute="top" secondItem="Sfe-ND-AUm" secondAttribute="bottom" constant="10" id="Ikr-sW-dNI"/>
-                            <constraint firstItem="gP0-WT-RCO" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="K0H-p0-h68"/>
-                            <constraint firstItem="gP0-WT-RCO" firstAttribute="top" secondItem="Sfe-ND-AUm" secondAttribute="bottom" constant="10" id="M4x-bU-Krt"/>
+                            <constraint firstItem="RPq-DE-1ZF" firstAttribute="top" secondItem="iqr-Ps-ljz" secondAttribute="bottom" constant="10" id="K2p-od-3C4"/>
                             <constraint firstItem="RPq-DE-1ZF" firstAttribute="top" secondItem="Chu-q5-mvn" secondAttribute="bottom" id="N1A-Gg-hB6"/>
-                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="top" secondItem="aIU-LE-IyP" secondAttribute="bottom" constant="10" id="Zk7-Xb-E0y"/>
                             <constraint firstItem="tmo-od-CM2" firstAttribute="centerY" secondItem="7ey-YT-FYf" secondAttribute="centerY" constant="5" id="Zof-OT-Fvt">
                                 <variation key="heightClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="height" secondItem="aIU-LE-IyP" secondAttribute="height" id="aVu-No-XWv"/>
-                            <constraint firstItem="aIU-LE-IyP" firstAttribute="leading" secondItem="gP0-WT-RCO" secondAttribute="trailing" constant="10" id="abn-Kc-hvG"/>
                             <constraint firstItem="Chu-q5-mvn" firstAttribute="top" secondItem="HsB-i3-vDV" secondAttribute="top" id="cPo-Jp-FpX"/>
-                            <constraint firstItem="Sfe-ND-AUm" firstAttribute="top" secondItem="aIU-LE-IyP" secondAttribute="bottom" constant="10" id="eBr-Z0-U6t"/>
                             <constraint firstItem="tmo-od-CM2" firstAttribute="centerX" secondItem="7ey-YT-FYf" secondAttribute="centerX" id="g8n-G7-Ow5"/>
-                            <constraint firstItem="aIU-LE-IyP" firstAttribute="top" secondItem="7ey-YT-FYf" secondAttribute="bottom" constant="10" id="gFG-9F-VL8"/>
                             <constraint firstItem="7ey-YT-FYf" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" id="lUR-3S-oB0"/>
+                            <constraint firstAttribute="trailing" secondItem="iqr-Ps-ljz" secondAttribute="trailing" constant="10" id="lUl-ym-XHU"/>
                             <constraint firstItem="Chu-q5-mvn" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" id="qrg-kU-LSm"/>
                             <constraint firstItem="7ey-YT-FYf" firstAttribute="top" secondItem="HsB-i3-vDV" secondAttribute="top" id="rpd-Hr-wpJ"/>
-                            <constraint firstAttribute="trailing" secondItem="aIU-LE-IyP" secondAttribute="trailing" constant="10" id="sZu-dK-753"/>
-                            <constraint firstItem="aIU-LE-IyP" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="y2L-NH-USb"/>
+                            <constraint firstItem="iqr-Ps-ljz" firstAttribute="leading" secondItem="HsB-i3-vDV" secondAttribute="leading" constant="10" id="sWt-my-IgN"/>
                             <constraint firstAttribute="trailing" secondItem="7ey-YT-FYf" secondAttribute="trailing" id="yWR-zh-z0j"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="abn-Kc-hvG"/>
-                                <exclude reference="9De-uU-hTx"/>
-                                <exclude reference="eBr-Z0-U6t"/>
-                                <exclude reference="5Q0-BN-Eax"/>
-                                <exclude reference="EAa-oK-TgQ"/>
-                                <exclude reference="2Ib-Om-ame"/>
-                                <exclude reference="Ikr-sW-dNI"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <include reference="abn-Kc-hvG"/>
-                                <exclude reference="y2L-NH-USb"/>
-                                <include reference="9De-uU-hTx"/>
-                                <exclude reference="FDD-bN-fOG"/>
-                                <include reference="eBr-Z0-U6t"/>
-                                <include reference="5Q0-BN-Eax"/>
-                                <include reference="EAa-oK-TgQ"/>
-                                <exclude reference="FXB-Vd-IPY"/>
-                                <exclude reference="Gqs-50-o6g"/>
-                                <include reference="2Ib-Om-ame"/>
-                                <include reference="Ikr-sW-dNI"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxL-Uh-Q8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -493,8 +469,9 @@
     <resources>
         <image name="boatingblur" width="954" height="715"/>
         <image name="downtown" width="752" height="500"/>
+        <image name="museum" width="3264" height="2448"/>
+        <image name="pool" width="1280" height="855"/>
         <image name="surfing" width="1280" height="720"/>
-        <image name="theatre" width="2250" height="1425"/>
         <image name="vero" width="3000" height="2000"/>
         <image name="weddings" width="1700" height="960"/>
     </resources>
