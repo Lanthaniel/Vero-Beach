@@ -195,7 +195,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m7p-e3-U9T">
                                 <rect key="frame" x="20" y="85" width="560" height="325"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qAa-iI-9kP">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qAa-iI-9kP">
                                         <rect key="frame" x="0.0" y="0.0" width="557" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAN-jI-1SO">
@@ -220,7 +220,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="557" height="91"/>
                                         </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-cn-uTP">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-cn-uTP">
                                         <rect key="frame" x="0.0" y="101" width="88" height="39"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-EC-snv">
@@ -232,13 +232,16 @@
                                                 <rect key="frame" x="0.0" y="21" width="46" height="18"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="21" width="46" height="18"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <variation key="heightClass=compact" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="101" width="88" height="39"/>
                                         </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Cxn-fl-8Me">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Cxn-fl-8Me">
                                         <rect key="frame" x="0.0" y="150" width="560" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63g-yv-g28">
@@ -263,7 +266,7 @@
                                             <rect key="frame" x="0.0" y="150" width="560" height="91"/>
                                         </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Zg9-ho-G3y">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Zg9-ho-G3y">
                                         <rect key="frame" x="0.0" y="251" width="559" height="74"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Do" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-YB-ss7">
@@ -307,7 +310,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9uA-Hd-0fT" secondAttribute="trailing" id="1gP-cF-mFt"/>
-                            <constraint firstItem="joa-YW-vCC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m7p-e3-U9T" secondAttribute="bottom" id="4jz-cn-3k3"/>
+                            <constraint firstItem="joa-YW-vCC" firstAttribute="top" secondItem="m7p-e3-U9T" secondAttribute="bottom" id="4jz-cn-3k3"/>
                             <constraint firstItem="Adk-Fb-ZsX" firstAttribute="top" secondItem="cKS-68-h9a" secondAttribute="top" id="54j-5A-YIX"/>
                             <constraint firstItem="joa-YW-vCC" firstAttribute="top" secondItem="9uA-Hd-0fT" secondAttribute="bottom" id="7FI-BM-isY"/>
                             <constraint firstItem="Adk-Fb-ZsX" firstAttribute="leading" secondItem="cKS-68-h9a" secondAttribute="leading" id="8Yz-zd-Tkn"/>
@@ -388,30 +391,30 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iqr-Ps-ljz">
                                 <rect key="frame" x="10" y="70" width="580" height="520"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ghf-5p-w7Q">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ghf-5p-w7Q">
                                         <rect key="frame" x="0.0" y="0.0" width="580" height="167"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="surfing" translatesAutoresizingMaskIntoConstraints="NO" id="x5L-fT-lWe" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing" translatesAutoresizingMaskIntoConstraints="NO" id="x5L-fT-lWe" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="285" height="167"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="weddings" translatesAutoresizingMaskIntoConstraints="NO" id="6Ec-KT-FkB" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weddings" translatesAutoresizingMaskIntoConstraints="NO" id="6Ec-KT-FkB" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
                                                 <rect key="frame" x="295" y="0.0" width="285" height="167"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-X9-pn6">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-X9-pn6">
                                         <rect key="frame" x="0.0" y="177" width="580" height="343"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pool" translatesAutoresizingMaskIntoConstraints="NO" id="1c2-LW-RzP" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pool" translatesAutoresizingMaskIntoConstraints="NO" id="1c2-LW-RzP" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="580" height="166"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egp-4y-8gL">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egp-4y-8gL">
                                                 <rect key="frame" x="0.0" y="176" width="580" height="167"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="downtown" translatesAutoresizingMaskIntoConstraints="NO" id="3vk-xa-wop" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downtown" translatesAutoresizingMaskIntoConstraints="NO" id="3vk-xa-wop" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="285" height="167"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="museum" translatesAutoresizingMaskIntoConstraints="NO" id="Jsn-mp-1mR" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="museum" translatesAutoresizingMaskIntoConstraints="NO" id="Jsn-mp-1mR" customClass="RoundedImageView" customModule="vero_beach" customModuleProvider="target">
                                                         <rect key="frame" x="295" y="0.0" width="285" height="167"/>
                                                     </imageView>
                                                 </subviews>
